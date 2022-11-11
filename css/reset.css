@@ -1,0 +1,19 @@
+html {
+  scroll-behavior:smooth;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quando', serif;
+  }
+  
+h1{
+  font-size: min(5vh, 15vw);
+  text-align: center;
+  padding: 5vh;
+  color: white;
+ 
+}

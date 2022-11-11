@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quando&display=swap');
+
+  nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    font-family:'Quando', serif;
+    background: rgba(19, 19, 19, 0.6);
+    
+    border-bottom: 0.5px solid white;
+  
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+
+    
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+
+  .logo {
+    font-size: 6vh;
+    
+  }
+  
+
+  /*Tentar utilizar icone do hamburger aqui*/
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+ 
+  }
+  
+  #hamburger {
+    display: block;
+    width: 32px;
+    height: 2px;
+    color: white;
+    margin: 8px;
+    transition: 0.3s;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 3.5vh;
+
+  }
+
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(45deg) translate(-5px, -7px);
+    opacity: 0;
+  }
+  
+  
+
+  
+  @media (max-width: 1130px) {
+ 
+
+    nav{
+      overflow: hidden;
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      padding: 0 20px;
+      font-size: 3vh;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    ul {
+      padding: 0;
+      
+    }
+    .nav-list {
+      position:fixed;
+      top: 10vh;
+      right: 0;
+      width: 70%;
+      height: 55vh;
+      background: rgba(36, 35, 35, 0.9);
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      
+    }
+    .nav-list li {
+      padding: 5vh 0;
+      width: 100%;
+      
+      text-align: center;
+      margin: 0 auto;
+      opacity: 0;
+    }
+
+    .nav-list li:hover{
+      background-color: rgba(54, 53, 53, 0.6);
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  

@@ -1,0 +1,148 @@
+.container-geral {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    }
+    
+
+.geral{
+    
+    height: 100vh;
+
+    background-color:rgba(3, 3, 3, 0.7);
+}
+
+#PrimeiraT{
+
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    color: white ;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.Icons {
+    padding: 5px 15px;
+}
+
+#github{
+    padding: 10px; 
+    font-size: 40px;
+}
+#github:hover{
+    color: black;
+}
+
+#linkedin {
+    padding: 10px; 
+    font-size: 40px;
+}
+
+#linkedin:hover{
+   color: #0A66C2;
+    
+}
+
+.IMG{
+ 
+    width: 40vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IMG-Ruan{
+    width: 35vh;
+    height: 35vh;
+
+    border-radius: 50%;
+    border: 2px solid rgb(88, 88, 88);
+    box-shadow: 5px 5px 20px black;
+    
+    
+}
+
+.IMG-Ruan:hover{
+    opacity: 0.6;
+}
+
+
+/* Efeito Barrinha Piscando*/
+.efect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3vh;
+
+}
+.line {
+    border-right: 2px solid white;
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+    margin: 0 auto;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.typing-animation{
+    animation: blinkCursor 500ms infinite normal, typing 2s steps(50) 1s normal both;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 6em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color:white;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+
+@media (max-width: 1130px) {
+
+
+    .IMG{
+        margin-bottom: -7vh;
+    }
+
+    #PrimeiraT{
+        width: 100%;
+        color: white ;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content:center;
+        
+
+        }
+  
+        /* Efeito Barrinha Piscando*/
+        .efect {
+           
+            font-size: 3vh;
+        }
+
+  }
